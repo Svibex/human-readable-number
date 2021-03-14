@@ -15,6 +15,6 @@ module.exports = function toReadable (number) {
     function tensToString (num) {
         return (num<20)
             ? numbersFrom0To19[num]
-            : tens[Math.floor(num/10)] + (num%10 ?  ${numbersFrom0To19[num%10]} : '');
+            : tens[Math.floor(num/10)] + (num%10 ? '  ${numbersFrom0To19[num%10]}' : '');
     }
 };
